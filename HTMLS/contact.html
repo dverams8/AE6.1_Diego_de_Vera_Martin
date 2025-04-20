@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/generico.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>All Shoes - Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-box">
+            <div class="header-nombre">
+                <img src="../IMAGES/Logo.png" alt="Logo">
+                <h1><span>ALL</span> SHOES</h1>
+            </div>
+            <input type="checkbox" name="button" id="menuCheckbox">
+            <label for="menuCheckbox" class="menuButton"><i class="fa-solid fa-bars"></i></label>
+            <div class="index">
+                <ul class="list">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../HTMLS/Grid Product Card.html">TIENDA</a></li>
+                    <li><a href="../HTMLS/Nosotros.html">NOSOTROS</a></li>
+                    <li><a href="../HTMLS/contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="header-login">
+                <a href="#" class="login"><i class="fa-solid fa-user"></i>Login</a>
+                <a href="#" class="register"><i class="fa-solid fa-user"></i>+ Register</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contactBox">
+            <h2>CONTACTO</h2>
+            <div class="contenido">
+                <div class="preguntas">
+                    <h2>¿TIENES ALGUNA DUDA?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil!</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, consequuntur esse tenetur
+                        dolores, eaque numquam doloremque ab animi ullam, atque ducimus sint dolorem similique quis
+                        temporibus repudiandae cupiditate sed doloribus?
+                    </p>
+                    <h3>E-Mail</h3>
+                    <a href="mailto:info@allshoes.es"><i class="fa-solid fa-envelope"></i></i>info@allshoes.es</a>
+                    <h3>Redes Sociales</h3>
+                    <div class="redes">
+                        <img src="../IMAGES/Logo.png" alt="logo">
+                        <a href="#"><img src="../IMAGES/Nosotros/facebook-icon.png" alt="facebook"></a>
+                        <a href="#"><img src="../IMAGES/Nosotros/instagram-logo.png" alt="instragram"></a>
+                        <a href="#"><img src="../IMAGES/Nosotros/telegram-icon.png" alt="telegram"></a>
+                        <a href="#"><img src="../IMAGES/Nosotros/whatsapp-icon.png" alt="whatsapp"></a>
+                        <a href="#"><img src="../IMAGES/Nosotros/x-twitter-icon.png" alt="twitter"></a>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <form class="form" action="" method="get">
+                        <input type="text" name="name" id="name" pattern="[A-Z][a-z]+[[ ][A-Z][a-z]+[ ][A-Z][a-z]+]*"
+                            placeholder="Nombre" required>
+                        <input type="email" name="email" id="email" placeholder="E-Mail (direccion@gmail.com)" pattern= "[a-z0-9]+@[a-z]+.+[a-z]+"required>
+                        <input type="tel" name="telephone" id="telephone" pattern="[0-9]{3}[ ]?[0-9]{3}[ ]?[0-9]{3}"
+                            placeholder="Teléfono (XXX XXX XXX)" required>
+                        <select name="subject" id="subject">
+                            <option value="" disabled selected>TEMA</option>
+                            <option value="product questions">Consulta sobre productos</option>
+                            <option value="web page failure">Fallo en la página web</option>
+                            <option value="delivery problems">Problemas con la entrega</option>
+                            <option value="suggestion">Sugerencia</option>
+                            <option value="other">Otros</option>
+                        </select>
+                        <textarea name="message" id="message" placeholder="Mensaje" required></textarea>
+                        <div class="confirmacion">
+                            <input type="checkbox" name="agreement" id="agreement" required>
+                            <label for="agreement">Aceptar <a href="../IMAGES/condiciones.pdf">condiciones</a></label>
+                        </div>
+                        <button type="submit">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Compañía</h3>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros Servicios</a></li>
+                    <li><a href="#">Política Privacidad</a></li>
+                    <li><a href="#">Afíliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Preguntas</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Afíliate</a></li>
+                    <li><a href="#">Pago</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Tienda</h3>
+                <ul>
+                    <li><a href="#">Ropa</a></li>
+                    <li><a href="#">Zapatos</a></li>
+                    <li><a href="#">Teléfonos</a></li>
+                    <li><a href="#">Pantallas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="X"><i>X</i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

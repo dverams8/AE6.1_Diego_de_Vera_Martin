@@ -1,0 +1,233 @@
+.contactBox > h2{
+    border-bottom: solid 1px grey;
+    border-top: solid 1px grey;
+    text-align: center;
+    margin: 10px 10px 20px;
+    padding: 20px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.preguntas {
+    width: 45%;
+    padding: 20px;
+}
+
+.preguntas > h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.preguntas > p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: rgb(85, 85, 85);
+}
+
+.preguntas > p:nth-child(2) {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.preguntas > h3 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+}
+
+.preguntas > a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.preguntas > a:hover {
+    text-decoration: underline;
+}
+
+.preguntas > a > i {margin-right: 5px;}
+
+.redes {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: solid 2px rgb(184, 111, 40);
+    background: linear-gradient(45deg, rgb(128, 87, 33), rgb(154, 145, 138));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.redes > * {
+    position: absolute;
+    transition: transform 1s ease;
+}
+
+.redes > *:hover {
+    transform: rotate(360deg);
+}
+
+.redes > a > img {
+    width: 30px;
+}
+
+.redes > img { 
+    width: 100px;
+    top: 24%;
+    left: 24%;
+    cursor: pointer;
+}
+
+.redes > a:nth-child(2) { 
+    bottom: 9%;
+    right: 18%;
+}
+
+.redes > a:nth-child(3) {
+    bottom: 52%;
+    right: 5%;
+}
+
+.redes > a:nth-child(3) > img {
+    border-radius: 45%;
+}
+
+.redes > a:nth-child(4) { 
+    bottom: 9%;
+    left: 18%;
+}
+
+.redes > a:nth-child(5) { 
+    bottom: 52%;
+    left: 5%;
+}
+
+.redes > a:nth-child(6) { 
+    top: 3%;
+    left: 42%;
+}
+
+.formulario {
+    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    border: solid 1px rgb(184, 111, 40);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > * {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form > *::placeholder {
+    color: rgb(247, 52, 64);
+}
+
+input:valid:not(:placeholder-shown){
+    background-color:#d4edda ;
+    border-color: #28a745;
+}
+
+textarea:valid:not(:placeholder-shown){
+    background-color:#d4edda ;
+    border-color: #28a745;
+}
+
+input:invalid{
+    background-color: rgb(223, 173, 173);
+    border: solid rgb(247, 52, 64) 2px;
+}
+
+textarea:invalid{
+    background-color: rgb(223, 173, 173);
+    border: solid rgb(247, 52, 64) 2px;
+}
+
+#subject {
+    background-color: white;
+    color: rgb(184, 111, 40);
+    border: solid 2px rgb(184, 111, 40);
+}
+
+#message {
+    padding-bottom: 100px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.confirmacion {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.confirmacion > #agreement {
+    margin-right: 10px;
+}
+
+.confirmacion {
+    background-color: white;
+    border: 0;
+}
+
+.confirmacion > label {
+    margin-bottom: 2px;
+}
+
+.confirmacion > label > a {
+    color: rgb(0, 123, 255);
+}
+
+.confirmacion > label > a:hover {
+    text-decoration: underline;
+}
+
+.form > button {
+    background-color: rgb(184, 111, 40);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form > button:hover {
+    background-color: rgb(138, 84, 30);
+    transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+    .contenido {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .formulario {
+        width: 95%;
+    }
+
+    .preguntas {
+        width: 95%;
+        margin-top: 2%;
+    }
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+.boton-especial:hover{
+    color: rgb(200, 125, 50);
+    transform: scale(1.1);
+    animation: pulse4 1s ease-out forwards infinite;
+    box-shadow: 0 0 3px;
+}
+
+@keyframes pulse4{
+    0% {transform: scale(1);}
+    25% {transform: scale(1.1);}
+    40% {transform: scale(1);}
+    60% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}

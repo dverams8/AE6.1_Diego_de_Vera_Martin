@@ -1,0 +1,178 @@
+.sliderBox {
+    background-color: rgb(36, 38, 43);
+    margin: 30px 60px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slidersContainer {
+    display: flex;
+    width: 400%;
+    animation: slide linear infinite 23s;
+}
+
+.slider {
+    display: flex;
+    align-items: stretch;
+    max-height: 500px;
+}
+
+.sliderText > *{
+    text-align: center;
+}
+
+.sliderText > h2 {
+    color: rgb(186, 113, 40);
+    font-size: 35px;
+}
+
+.primero {
+    color: rgb(137, 131, 123);
+    font-size: large;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.segundo {
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.sliderText > a {
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    display: flex;
+    align-self: center;
+    padding: 15px;
+    margin: 20px 5px;
+    width: 200px;
+    position: absolute;
+    top: 78%;
+}
+
+
+.sliderText {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 60px 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sliderImg {
+    display: flex;
+    width: 40%;
+}
+
+.sliderImg > img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+@keyframes slide {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
+
+.sneaker {
+    padding: 20px 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.sneakerText {
+    padding: 10px 5px;
+    width: 41%;
+    display: inline-block;
+}
+
+.sneakerText > h2 {
+    margin-bottom: 12px;
+    font-size: xx-large;
+    color: rgb(186, 113, 40);
+}
+
+.sneakerText > p:nth-child(2) {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.sneakerText > p:nth-child(3) {
+    font-size: 13px;
+}
+
+.sneakerText > a {
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    padding: 10px;
+    margin: 20px 5px;
+    width: 140px;
+    display: flex;
+    justify-self: end;
+}
+
+.sneakerText > a > i {
+    margin-right: 8px;
+    margin-top: 3px;
+}
+
+.sneakerImages {
+    width: 56%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image {
+    width: 30%;
+    height: auto;
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.image:hover {
+    overflow: hidden;
+   
+    img {
+        transform: scale(1.2);
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .sneaker {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sneakerText {
+        width: 90%;
+        padding: 10px 12px;
+        border: solid 2px black;
+        margin-bottom: 20px;
+    }
+
+    .sneakerImages {
+        width: 91%;
+    }
+
+    .segundo{
+        display: none;
+    }
+
+}
